@@ -1,0 +1,255 @@
+        /* General Styles */
+        body {
+            background-color: #0D0F1A;
+            color: white;
+            font-family: 'Manrope', sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #1A1C2C;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 800px;
+            margin: auto;
+            transition: all 0.3s ease;
+        }
+
+        h2 {
+            color: #B38BFA;
+            font-size: 24px;
+            transition: color 0.3s ease;
+            margin-bottom: 40px;
+        }
+
+        textarea {
+            width: 95%;
+            height: 150px;
+            background-color: #161825;
+            border: 1px solid #b48bfa9a;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            resize: none;
+            transition: all 0.3s ease;
+            margin: 0 auto;
+            display: block;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #D1A1F9;
+        }
+
+        .counter-box {
+            margin-top: 15px;
+            color: #B38BFA;
+            font-weight: bold;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .counter-box span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #F1B457;
+        }
+
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            background: #252740;
+            padding: 12px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .toolbar:hover {
+            background: #2E3150;
+        }
+
+        .toolbar select, .toolbar button {
+            background: #8146F9;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .toolbar select:hover, .toolbar button:hover {
+            background: #9A63FF;
+        }
+
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toggle-switch label {
+            font-size: 14px;
+            color: white;
+        }
+
+        .toggle-switch input[type="checkbox"] {
+            appearance: none;
+            width: 40px;
+            height: 20px;
+            background: #555;
+            border-radius: 20px;
+            position: relative;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .toggle-switch input[type="checkbox"]::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: white;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-switch input[type="checkbox"]:checked {
+            background: #8146F9;
+        }
+
+        .toggle-switch input[type="checkbox"]:checked::before {
+            transform: translateX(20px);
+        }
+
+        .suggestions {
+            margin-top: 15px;
+            text-align: left;
+            color: #FF6B6B;
+            font-size: 14px;
+        }
+
+        .suggestions div {
+            margin-bottom: 8px;
+            padding: 8px;
+            background: #252740;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .suggestions div:hover {
+            background: #2E3150;
+        }
+
+        /* Font Family Dropdown Preview */
+        .font-preview {
+            font-family: inherit;
+        }
+
+        .font-preview.M {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .font-preview.A {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .font-preview.T {
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            textarea {
+                height: 120px;
+                font-size: 14px;
+            }
+
+            .toolbar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .toolbar select, .toolbar button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .counter-box {
+                flex-direction: column;
+                gap: 10px;
+                font-size: 14px;
+            }
+
+            .counter-box span {
+                font-size: 20px;
+            }
+
+            .toggle-switch {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            textarea {
+                height: 100px;
+                font-size: 12px;
+                padding: 10px;
+            }
+
+            .toolbar {
+                padding: 10px;
+            }
+
+            .toolbar select, .toolbar button {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+
+            .counter-box {
+                font-size: 12px;
+            }
+
+            .counter-box span {
+                font-size: 18px;
+            }
+
+            .suggestions {
+                font-size: 12px;
+            }
+        }
