@@ -37,7 +37,7 @@ This is the initial release of the Word & Character Counter Tool. It includes ba
 ## Live Link
 
 Check out the live version of the tool here:  
-[Word & Character Counter Tool](https://rsabbir.com/tools/word-character-counter/)
+[Word & Character Counter Tool](https://rsabbir.com/tools/character-count/)
 
 ---
 
