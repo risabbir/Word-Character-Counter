@@ -54,8 +54,8 @@ Future updates may include:
 
 ## Copyright
 
-© 2023 Word & Character Counter Tool.  
-Developed by [Your Name].  
+© 2025 Word & Character Counter Tool.  
+Developed by [R.Sabbir].  
 All rights reserved.
 
 ---
