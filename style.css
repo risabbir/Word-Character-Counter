@@ -253,3 +253,20 @@
                 font-size: 12px;
             }
         }
+
+
+       .copyright-call {
+    font-size: 16px;
+    text-align: center;
+    color: #00e00;
+    margin-top: 20px;
+}
+
+.copyright-call a {
+    color: #9A63FF;
+    text-decoration: none;
+}
+
+.copyright-call a:hover {
+    text-decoration: underline;
+}
